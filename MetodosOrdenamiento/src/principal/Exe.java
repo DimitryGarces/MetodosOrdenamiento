@@ -11,13 +11,15 @@ public class Exe {
     static Burble bur = new Burble();
     static InsertionSort inser = new InsertionSort();
     static SelectionSort sele = new SelectionSort();
+    static ShellSort shell = new ShellSort();
 
     public static void main(String[] args) {
         //Arreglo de ejemplo
         int[] arr = {4, 6, 8, 2, 1, 6}, arrOrden;
 //        arrOrden = bur.burbleSort(arr);
 //        arrOrden = inser.insersionSort(arr);
-        arrOrden = sele.selectionSort(arr);
+//        arrOrden = sele.selectionSort(arr);
+        arrOrden = shell.shellSort(arr);
         System.out.println(show(arrOrden, ""));
     }
 
